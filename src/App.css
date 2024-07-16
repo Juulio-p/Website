@@ -1,19 +1,19 @@
 #div1{
   text-align: center;
 }
-#div2{
-  text-align: center;
-  padding-left: 5%;
-}
-#div3{
-  text-align: center;
-  padding-right: 16%;
 
-}
 #sub{
   background-color: white;
 }
 #file{
   background-color: rgba(241, 223, 223, 0);
 }
-
+#login{
+  background-color: #a5a1a1;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0 16px;
+    width: 260px;
+}
