@@ -4,36 +4,50 @@ import './App.css'
 
 
 function LoginForm() {
-  return(
-    <form>
-      <div>
-        <label htmlFor="username">  UserName:</label>
-        <input type= "username" id="username" />
-         
-        </div>
 
-        <div> 
-        <label htmlFor="password">  Password:</label>
-        <input type= "password" id="password" /> 
-        </div>
 
-        <div>
-          
-        </div>
+  const [username, setname] = useState(""); 
+  const [password, setpswd] = useState(""); 
 
-        <button  name="login"  type="submit" id="login">Log In</button>
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name you entered was: ${username}`);
+    alert(`The password you entered was: ${password}`);
 
-    </form>
 
-    
-  ); 
-}
-
-function App() {
+  };
 
   return (
-    <>
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value={username}
+          onChange={ (e) => setname(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="password">Password:</label>
+        <input
+          type="text"
+          id="password"
+          name="password"
+          value={password}
+          onChange={ (e)=> setpswd (e.target.value)}
+        />
+      </div>
+      <button name="login" type="submit" id="login">Log In</button>
+    </form>
+  );
+}
 
+
+function App() {
+  return (
+    <>
     <div id="div1">    
       <LoginForm /> 
     </div>
