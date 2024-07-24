@@ -1,15 +1,10 @@
 #div1{
   text-align: center;
+  background-color: rgb(143, 137, 137);
 }
 
-#sub{
-  background-color: white;
-}
-#file{
-  background-color: rgba(241, 223, 223, 0);
-}
 #login{
-  background-color: #a5a1a1;
+  background-color: #7edb7e;
     border: none;
     border-radius: 6px;
     font-size: 15px;
