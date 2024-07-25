@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import './App.css'
+import { Link, Outlet } from 'react-router-dom';
+
+
 
 function LoginForm() {
     const [username, setname] = useState(""); 
@@ -11,8 +14,11 @@ function LoginForm() {
       alert(`The password you entered was: ${password}`);
     };
     return (
-      <form onSubmit={handleSubmit}>
-        <div>
+
+      <form onSubmit={handleSubmit} id="form">
+        <h1> Welcome To Sambo, Please Log in! </h1>
+
+        <div id = "div1">
           <label htmlFor="username">Username:</label>
           <input
             type="text"
@@ -22,7 +28,7 @@ function LoginForm() {
             onChange={ (e) => setname(e.target.value)}
           />
         </div>
-        <div>
+        <div id="div2">
           <label htmlFor="password">Password:</label>
           <input
             type="text"
@@ -32,8 +38,12 @@ function LoginForm() {
             onChange={ (e)=> setpswd (e.target.value)}
           />
         </div>
+
+        <Link to="/Welcomepg" > 
         <button name="login" type="submit" id="login">Log In</button>
+        </Link>
       </form>
+
     );
   }
   
