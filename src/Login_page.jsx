@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Link, Outlet } from 'react-router-dom';
+//import createStore from 'react-auth-kit/createStore'; 
 
 
 
@@ -14,6 +15,8 @@ function LoginForm() {
       alert(`The password you entered was: ${password}`);
     };
     return (
+
+      <div id='container'>
 
       <form onSubmit={handleSubmit} id="form">
         <h1> Welcome To Sambo, Please Log in! </h1>
@@ -42,7 +45,15 @@ function LoginForm() {
         <Link to="/Welcomepg" > 
         <button name="login" type="submit" id="login">Log In</button>
         </Link>
+
+        <p>Dont Have an Account ?  register here </p>
+
+        <Link to="/Register "> 
+        <button name="register" type='submit' id="register">register </button>
+        </Link>
+
       </form>
+      </div>
 
     );
   }
