@@ -15,10 +15,18 @@ function LoginForm() {
       alert(`The password you entered was: ${password}`);
     };
     return (
-
       <div id='container'>
+          <div id= "divider" >
+              <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div> 
+              </div>
 
-      <form onSubmit={handleSubmit} id="form">
+
+        <div id="form-quote">
+          <form onSubmit={handleSubmit} id="form">
         <h1> Welcome To Sambo, Please Log in! </h1>
 
         <div id = "div1">
@@ -51,10 +59,14 @@ function LoginForm() {
         <Link to="/Register "> 
         <button name="register" type='submit' id="register">register </button>
         </Link>
+        </form>
 
-      </form>
+          <div id="bottomnote"> where new beginings thrive, sambo making the world a better place one
+          one friendship at a time
+          </div>
+        </div>    
+
       </div>
-
     );
   }
   

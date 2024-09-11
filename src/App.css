@@ -1,9 +1,9 @@
 #form{
-   background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 64%;
   text-align: center;
 }
 #login{
@@ -35,21 +35,6 @@
   margin-bottom: 20px;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-}
-
 button {
 
   background-color: #7edb7e;
@@ -62,3 +47,54 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+/* Style the links inside the navigation bar */
+
+#divider{
+  padding-bottom: 20px;
+}
+.topnav {
+  background-color: #6b6969; /* Set the background color of the navbar */
+  overflow: hidden; /* Clear floats and ensure proper layout */
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the navigation items */
+  padding: 5px 0; /* Add some vertical padding */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2; /* Link color */
+  padding: 14px 16px; /* Padding around links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 17px; /* Font size for links */
+  display: inline-block; /* Display links inline */
+  margin: 0 5px; /* Add some margin between links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: rgb(217, 19, 19); /* Text color on hover */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #367b62; /* Background color for active link */
+  color: white; /* Text color for active link */
+}
+#container{
+  padding-left: 2%;
+}
+#bottomnote{
+  padding: 1%;
+  color: #e6e0e0;
+  font-size: 17px;
+}
+#form-quote {
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Align items vertically in the center */
+}
+
+
