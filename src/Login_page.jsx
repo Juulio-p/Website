@@ -23,8 +23,6 @@ function LoginForm() {
                 <a href="#about">About</a>
             </div> 
               </div>
-
-
         <div id="form-quote">
           <form onSubmit={handleSubmit} id="form">
         <h1> Welcome To Sambo, Please Log in! </h1>
@@ -64,7 +62,18 @@ function LoginForm() {
           <div id="bottomnote"> where new beginings thrive, sambo making the world a better place one
           one friendship at a time
           </div>
-        </div>    
+        </div> 
+
+        <h2 id="about-me-title">About the Company </h2>
+
+        <div class="about-me">
+            <img src="https://media.licdn.com/dms/image/v2/C5603AQFvASYtwv8SpQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1631381700592?e=1731542400&v=beta&t=mPZ51_EYbyd9t2_qHQo8jm-61IOXjt4GUDjmWPieKPc" alt="pic of ceo" class="ceo-img"/>
+            <p class="about-description">
+            As the CEO of Sambo , I believe in shaping the future through innovation and leadership. Dedicated to empowering teams, fostering creativity, and turning bold ideas into reality. Join me on a journey of growth and impact!
+            </p>
+        </div>
+
+
 
       </div>
     );
