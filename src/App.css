@@ -5,6 +5,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 40%;
   text-align: center;
+  color: #7e7d7d;
 }
 #login{
   background-color: #7edb7e;
@@ -84,9 +85,7 @@ button:hover {
   background-color: #367b62; /* Background color for active link */
   color: white; /* Text color for active link */
 }
-#container{
-  padding-left: 2%;
-}
+
 #bottomnote{
   padding: 1%;
   color: #9d9b9b;
