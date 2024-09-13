@@ -3,18 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://juulio-p.github.io/Website/",
   "scripts": {
     "dev": "vite",
-    "build": "build1",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "Website preview"
+    "preview": "Website preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "antd": "^5.19.3",
     "bootstrap": "^5.3.3",
+    "express-session": "^1.18.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.3.1",
+    "react-auth-kit": "^3.1.3",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
@@ -29,6 +34,7 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "gh-pages": "^6.1.1",
     "vite": "^5.3.1"
   }
 }

@@ -1,6 +1,11 @@
 #form{
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
   text-align: center;
-  background-color: rgb(143, 137, 137);
+  color: #7e7d7d;
 }
 #login{
   background-color: #7edb7e;
@@ -10,4 +15,112 @@
     line-height: 28px;
     padding: 0 16px;
     width: 260px;
+    cursor: pointer;
+
+}
+#login:hover{
+  background-color: #0056b3;
+}
+.register-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color:slategray;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+
+  background-color: #7edb7e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the links inside the navigation bar */
+
+#divider{
+  padding-bottom: 20px;
+}
+.topnav {
+  background-color: #6b6969; /* Set the background color of the navbar */
+  overflow: hidden; /* Clear floats and ensure proper layout */
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the navigation items */
+  padding: 5px 0; /* Add some vertical padding */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2; /* Link color */
+  padding: 14px 16px; /* Padding around links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 17px; /* Font size for links */
+  display: inline-block; /* Display links inline */
+  margin: 0 5px; /* Add some margin between links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: rgb(217, 19, 19); /* Text color on hover */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #367b62; /* Background color for active link */
+  color: white; /* Text color for active link */
+}
+
+#bottomnote{
+  padding: 1%;
+  color: #9d9b9b;
+  font-size: 17px;
+}
+#form-quote {
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Align items vertically in the center */
+}
+
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ceo-img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.about-description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #6b6969;
+}
+#about-me-title{
+  padding-top: 10%;
+  color: #6b6969;
+  text-align: center;
+
 }
